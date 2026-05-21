@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int year;
+    cout << "please enter the year : ";
+    cin >> year;
+
+    if (year % 4 == 0)
+    {
+        if (year % 100 == 0)
+        {
+            if (year % 400 == 0)
+            {
+                cout << "leap";
+            }
+            else
+            {
+                cout << "not leap";
+            }
+        }
+        else
+        {
+            cout << "leap";
+        }
+    }
+    else
+    {
+        cout << "Not leap";
+    }
+
+    return 0;
+}
